@@ -1,0 +1,100 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #69a1cf;
+    color: white;
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: white;
+    color: #1e88e5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #cce4f7;
+  }
+  
+  /* Main */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  .left, .right {
+    width: 45%;
+  }
+  
+  .signup-btn {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #1565c0;
+  }
+
+  .create-btn {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .create-btn:hover {
+    background-color: #1565c0;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .task-form input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .submit-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2e7d32;
+  }
+  
+  
