@@ -1,12 +1,36 @@
+// import { Component } from '@angular/core';
+
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.css']
+// })
+// export class AppComponent {
+//   taskList: any[] = [];
+
+//   addTask(task: any) {
+//     this.taskList.push(task);
+//   }
+// }
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TaskFormComponent } from './components/task-form/task-form.component';
+import { TaskListComponent } from './components/task-list/task-list.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, FormsModule, TaskFormComponent, TaskListComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'student-task-manager';
+  taskList: any[] = [];
+
+  addTask(task: any) {
+    this.taskList.push(task);
+    console.log('Task added:', task);
+  }
 }
