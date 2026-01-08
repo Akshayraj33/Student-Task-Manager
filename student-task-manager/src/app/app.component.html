@@ -334,6 +334,47 @@
 
 
 <!-- HEADER -->
+<!-- <header class="header">
+  <h1 class="logo">Student Task Manager</h1>
+  <div class="auth-buttons">
+    <button>Login</button>
+    <button>Signup</button>
+  </div>
+</header> -->
+
+<!-- MAIN BODY -->
+<!-- <main class="main"> -->
+  <!-- LEFT SECTION -->
+  <!-- <section class="left">
+    <h2>Manage Your Tasks Easily</h2>
+    <p>Organize, plan and track your student tasks effectively with this simple tool.</p>
+    <button type="Signup" class="signup-btn">Signup</button>
+  </section> -->
+
+  <!-- RIGHT SECTION -->
+   
+  <!-- <section class="right">
+    <app-task-form (taskCreated)="addTask($event)"></app-task-form>
+    <app-task-list [tasks]="taskList"></app-task-list>
+  </section>
+</main> -->
+
+  <!-- <section class="right">
+    <button class="create-btn">Create</button>
+
+    <form class="task-form">
+      <label>Task Name:</label>
+      <input type="text" placeholder="Enter task name" />
+
+      <label>Due By:</label>
+      <input type="date" />
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+</main> -->
+
+<!-- HEADER -->
 <header class="header">
   <h1 class="logo">Student Task Manager</h1>
   <div class="auth-buttons">
@@ -347,22 +388,18 @@
   <!-- LEFT SECTION -->
   <section class="left">
     <h2>Manage Your Tasks Easily</h2>
-    <p>Organize, plan and track your student tasks effectively with this simple tool.</p>
-    <button type="Signup" class="signup-btn">Signup</button>
+    <p>
+      Organize, plan and track your student tasks effectively with this simple tool.
+    </p>
+    <button class="signup-btn">Signup</button>
   </section>
 
   <!-- RIGHT SECTION -->
   <section class="right">
-    <button class="create-btn">Create</button>
+    <!-- 🔥 THIS LINE IS CRITICAL -->
+    <app-task-form (taskCreated)="addTask($event)"></app-task-form>
 
-    <form class="task-form">
-      <label>Task Name:</label>
-      <input type="text" placeholder="Enter task name" />
-
-      <label>Due By:</label>
-      <input type="date" />
-
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
+    <!-- 🔥 TASK LIST -->
+    <app-task-list [tasks]="taskList"></app-task-list>
   </section>
 </main>
